@@ -8,8 +8,8 @@ body {
 }
 
 .main {
-    position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     height: 100vh;
     background-size: cover !important;
     background-color: #FF819E !important;
