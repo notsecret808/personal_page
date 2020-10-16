@@ -15,19 +15,19 @@ body {
 
 #main-wrapper {
     height: 100vh;
-    background: url('/img/main.gif') center;
+    background: url('personal_page/img/main.gif') center;
 }
 
 #tg-wrapper {
-    background: url('/img/tg.gif') center;
+    background: url('personal_page/img/tg.gif') center;
 }
 
 #github-wrapper {
-    background: url('/img/gh.gif') center;
+    background: url('personal_page/img/gh.gif') center;
 }
 
 #vk-wrapper {
-    background: url('/img/vk.gif') center;
+    background: url('personal_page/img/vk.gif') center;
 }
 
 #layout-opacity {

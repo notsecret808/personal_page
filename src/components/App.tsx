@@ -15,7 +15,7 @@ function Link(props: LinkInfo) {
     return (
         <div className={'link-wrapper'}>
             <div className={'logo-wrapper'}>
-                <a href={"https://" + props.ServiceLink}><img src={"/img/" + name + '.png'} alt={name + "-logo"}
+                <a href={"https://" + props.ServiceLink}><img src={"personal_page/img/" + name + '.png'} alt={name + "-logo"}
                                                               className={style}/></a>
             </div>
             <div onClick={() => props.setBackgroundStyle(props.BackgroundStyle)} className={'link-container '}>
