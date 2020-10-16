@@ -10,15 +10,16 @@ type LinkInfo = {
 }
 
 function Link(props: LinkInfo) {
+    const [style, setStyle] = useState('logo');
     const name = props.ServiceName.toLowerCase();
     return (
-        <div onClick={() => props.setBackgroundStyle(props.BackgroundStyle)} className={'link-wrapper'}>
+        <div className={'link-wrapper'}>
             <div className={'logo-wrapper'}>
                 <a href={"https://" + props.ServiceLink}><img src={"/img/" + name + '.png'} alt={name + "-logo"}
-                                                              className={'logo'}/></a>
+                                                              className={style}/></a>
             </div>
-            <div className={'link-container'}>
-                <p>{props.ServiceName}</p>
+            <div onClick={() => props.setBackgroundStyle(props.BackgroundStyle)} className={'link-container '}>
+                <p className={'glitch'} data-text={props.ServiceName}>{props.ServiceName}</p>
             </div>
         </div>
     )
@@ -27,8 +28,8 @@ function Link(props: LinkInfo) {
 function Footer() {
     return (
         <div className="footer-wrapper">
-            <div className="footer-container">
-                <h1>By Levandro</h1>
+            <div className="footer-container ">
+                <h1 data-text={'By Levandro'} className={'glitch'}>By Levandro</h1>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
 body {
@@ -6,7 +6,6 @@ body {
     overflow: hidden;
     font-family: 'Cinzel', serif;
     font-weight: 400 !important;
-
 }
 
 .main {
@@ -64,6 +63,7 @@ body {
     padding: 0 0.5rem 0;
     display: flex;
     justify-content: center;
+    transition: 0.2s;
 }
 
 .link-container:hover {
@@ -76,11 +76,20 @@ body {
     margin-bottom: 1rem;
 }
 
-
 .logo {
     width: 10rem;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    opacity: 0.75;
 }
 
+.logo:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
 @media (max-width: 768px) {
     #menu {
@@ -106,19 +115,13 @@ body {
     }
 }
 
-@media (max-width: 425px) {
-    .logo {
-        width: 5rem;
-    }
-}
-
 p, h1 {
     text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
 }
 
 h1 {
     font-weight: 400 !important;
-    /*font-family: 'Bubblegum Sans', cursive;*/
+    /*font-family: 'Skranji', cursive;*/
     color: #ffffff;
     font-size: 2rem;
 }
@@ -133,6 +136,24 @@ h1 {
 .footer-container {
     display: flex;
     justify-content: center;
+}
+
+.footer-container h1 {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1rem !important;
+}
+
+@media (max-width: 425px) {
+    .logo {
+        width: 5rem;
+    }
+
+    .footer-container h1 {
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0.4rem !important;
+    }
 }
 
 a {

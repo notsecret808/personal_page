@@ -10,30 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e0755d-9af3-412f-8052-9818dcbeaf5a" name="Default Changelist" comment="feauture: basic design created">
-      <change afterPath="$PROJECT_DIR$/public/img/GitHub-Mark/PNG/GitHub-Mark-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GitHub-Mark/PNG/GitHub-Mark-64px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GitHub-Mark/Vector/GitHub-Mark.ai" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GitHub-Mark/Vector/GitHub-Mark.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/gh.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/gh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/tg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/vk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/animation.scss" afterDir="false" />
+    <list default="true" id="73e0755d-9af3-412f-8052-9818dcbeaf5a" name="Default Changelist" comment="refactor: design improved">
+      <change afterPath="$PROJECT_DIR$/public/img/vk.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/github.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/main.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/main.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/tg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/tg.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/vk.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/vk.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/AppStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/AppStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/animation.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +99,7 @@
       <updated>1602838791277</updated>
       <workItem from="1602838792895" duration="177000" />
       <workItem from="1602839027432" duration="1080000" />
-      <workItem from="1602840113905" duration="13946000" />
+      <workItem from="1602840113905" duration="19038000" />
     </task>
     <task id="LOCAL-00001" summary="feauture: basic design created">
       <created>1602846623295</created>
@@ -126,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602846623295</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor: design improved">
+      <created>1602854249058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602854249058</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +135,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feauture: basic design created" />
-    <option name="LAST_COMMIT_MESSAGE" value="feauture: basic design created" />
+    <MESSAGE value="refactor: design improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: design improved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="141" y="32" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602840323179">
@@ -181,9 +171,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1320" height="163" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602849768240" />
-    <state x="278" y="115" width="800" height="572" key="Vcs.Push.Dialog.v2" timestamp="1602846626889">
+    <state x="278" y="115" width="800" height="572" key="Vcs.Push.Dialog.v2" timestamp="1602854302274">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="278" y="115" width="800" height="572" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602846626889" />
+    <state x="278" y="115" width="800" height="572" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602854302274" />
   </component>
 </project>
