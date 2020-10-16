@@ -9,28 +9,36 @@ type LinkInfo = {
     setBackgroundStyle: (style: string) => void,
 }
 
+type Footer = {
+    setBackgroundStyle: (style: string) => void,
+}
+
 function Link(props: LinkInfo) {
     const [style, setStyle] = useState('logo');
     const name = props.ServiceName.toLowerCase();
     return (
-        <div className={'link-wrapper'}>
+        <div className={'link-wrapper'} onMouseEnter={() => {
+            props.setBackgroundStyle(props.BackgroundStyle)
+        }}>
             <div className={'logo-wrapper'}>
                 <a href={"https://" + props.ServiceLink}><img src={"/personal_page/img/" + name + '.png'}
                                                               alt={name + "-logo"}
                                                               className={style}/></a>
             </div>
-            <div onClick={() => props.setBackgroundStyle(props.BackgroundStyle)} className={'link-container '}>
+            <div onClick={() => props.setBackgroundStyle(props.BackgroundStyle)} onMouseEnter={() => {
+                props.setBackgroundStyle(props.BackgroundStyle)
+            }} className={'link-container '}>
                 <p className={'glitch'} data-text={props.ServiceName}>{props.ServiceName}</p>
             </div>
         </div>
     )
 }
 
-function Footer() {
+function Footer(props:Footer) {
     return (
         <div className={"footer-wrapper-wrapper"}>
             <div className="footer-wrapper">
-                <div className="footer-container ">
+                <div onMouseEnter={() => {props.setBackgroundStyle('main-wrapper')}} className="footer-container ">
                     <h1 data-text={'By Levandro'} className={'glitch'}>By Levandro</h1>
                 </div>
             </div>
@@ -55,7 +63,7 @@ function App() {
                               ServiceName={'GH'}/>
                     </div>
                 </div>
-                <Footer/>
+                <Footer setBackgroundStyle={setBackground}/>
             </div>
         </div>
     );
