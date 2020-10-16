@@ -15,7 +15,8 @@ function Link(props: LinkInfo) {
     return (
         <div className={'link-wrapper'}>
             <div className={'logo-wrapper'}>
-                <a href={"https://" + props.ServiceLink}><img src={"/personal_page/img/" + name + '.png'} alt={name + "-logo"}
+                <a href={"https://" + props.ServiceLink}><img src={"/personal_page/img/" + name + '.png'}
+                                                              alt={name + "-logo"}
                                                               className={style}/></a>
             </div>
             <div onClick={() => props.setBackgroundStyle(props.BackgroundStyle)} className={'link-container '}>
@@ -27,9 +28,11 @@ function Link(props: LinkInfo) {
 
 function Footer() {
     return (
-        <div className="footer-wrapper">
-            <div className="footer-container ">
-                <h1 data-text={'By Levandro'} className={'glitch'}>By Levandro</h1>
+        <div className={"footer-wrapper-wrapper"}>
+            <div className="footer-wrapper">
+                <div className="footer-container ">
+                    <h1 data-text={'By Levandro'} className={'glitch'}>By Levandro</h1>
+                </div>
             </div>
         </div>
     )
