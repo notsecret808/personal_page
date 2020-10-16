@@ -105,12 +105,6 @@ body {
         color: white;
     }
 
-    .main {
-        background-size: cover !important;
-        /*zoom: 125%*/
-        /*transform: scale(1.2);*/
-    }
-
     .logo {
         width: 7rem;
     }
