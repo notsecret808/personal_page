@@ -9,12 +9,13 @@ body {
 }
 
 .main {
+    height: 100vh;
     background-size: cover !important;
     background-color: #FF819E !important;
+    overflow: hidden;
 }
 
 #main-wrapper {
-    height: 100vh;
     background: url('/personal_page/img/main.gif') center;
 }
 
@@ -33,6 +34,7 @@ body {
 #layout-opacity {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
