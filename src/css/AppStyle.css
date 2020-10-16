@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
 body {
     margin: 0;
     overflow: hidden;
     font-family: 'Cinzel', serif;
+    font-weight: 400 !important;
+
 }
 
 .main {
     background-size: cover !important;
-    /*zoom: 125%*/
+    background-color: #FF819E !important;
 }
 
 #main-wrapper {
@@ -19,7 +24,7 @@ body {
 }
 
 #github-wrapper {
-    background: url('/img/github.gif') center;
+    background: url('/img/gh.gif') center;
 }
 
 #vk-wrapper {
@@ -32,7 +37,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #menu-wrapper {
@@ -54,27 +59,83 @@ body {
 }
 
 .link-container {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 0 0.5rem 0;
     display: flex;
     justify-content: center;
 }
+
+.link-container:hover {
+    border: 1px solid white;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+.logo {
+    width: 10rem;
+}
+
 
 @media (max-width: 768px) {
     #menu {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2rem;
+        grid-gap: 1.5rem;
     }
 
     .link-wrapper p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: white;
     }
 
     .main {
         background-size: cover !important;
         /*zoom: 125%*/
-        transform: scale(1.2);
+        /*transform: scale(1.2);*/
     }
 
+    .logo {
+        width: 7rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo {
+        width: 5rem;
+    }
+}
+
+p, h1 {
+    text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
+}
+
+h1 {
+    font-weight: 400 !important;
+    /*font-family: 'Bubblegum Sans', cursive;*/
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.footer-wrapper {
+    margin: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: transparent;
+    text-decoration: none;
 }
