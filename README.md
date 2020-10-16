@@ -7,3 +7,4 @@ Hello, I'm Levandro and this is my personal page. Now I keep here my links to so
 - [ ] Check Github logo for higly resolution
 - [ ] Replace GIF with MP4 files and remade page layout
 - [ ] Add transition between backgrounds
+- [ ] Add easter egg from Neko
