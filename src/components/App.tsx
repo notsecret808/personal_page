@@ -34,11 +34,13 @@ function Link(props: LinkInfo) {
     )
 }
 
-function Footer(props:Footer) {
+function Footer(props: Footer) {
     return (
         <div className={"footer-wrapper-wrapper"}>
             <div className="footer-wrapper">
-                <div onMouseEnter={() => {props.setBackgroundStyle('main-wrapper')}} className="footer-container ">
+                <div onMouseEnter={() => {
+                    props.setBackgroundStyle('main')
+                }} className="footer-container ">
                     <h1 data-text={'By Levandro'} className={'glitch'}>By Levandro</h1>
                 </div>
             </div>
@@ -48,17 +50,21 @@ function Footer(props:Footer) {
 
 
 function App() {
-    const [background, setBackground] = useState('main-wrapper');
+    const [background, setBackground] = useState('main');
     return (
-        <div id={background} className={'main'}>
+        <div id={'main-wrapper'} className={'main ' + background + '-bg'}>
+            <video loop={true} autoPlay={true} muted={true} key={background}>
+                <source src={"/personal_page/img/" + background + ".mp4"} type="video/mp4"/>
+                <source src={"/personal_page/img/" + background + ".webm"} type="video/webm"/>
+            </video>
             <div id={'layout-opacity'}>
                 <div id={'menu-wrapper'}>
                     <div id={'menu'}>
-                        <Link setBackgroundStyle={setBackground} BackgroundStyle={'vk-wrapper'} ServiceName={'VK'}
+                        <Link setBackgroundStyle={setBackground} BackgroundStyle={'vk'} ServiceName={'vk'}
                               ServiceLink={'vk.com/glodboyshawty'}/>
-                        <Link setBackgroundStyle={setBackground} BackgroundStyle={'tg-wrapper'} ServiceName={'TG'}
+                        <Link setBackgroundStyle={setBackground} BackgroundStyle={'tg'} ServiceName={'tg'}
                               ServiceLink={'t.me/Levandro'}/>
-                        <Link setBackgroundStyle={setBackground} BackgroundStyle={'github-wrapper'}
+                        <Link setBackgroundStyle={setBackground} BackgroundStyle={'gh'}
                               ServiceLink={'github.com/notsecret808'}
                               ServiceName={'GH'}/>
                     </div>

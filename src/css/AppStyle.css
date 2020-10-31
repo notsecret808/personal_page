@@ -11,27 +11,63 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100vh;
-    background-size: cover !important;
-    background-color: #FF819E !important;
+    /*background-size: cover !important;*/
+    /*background-color: #FF819E !important;*/
+    /*background-image: url("/personal_page/img/vk.jpg");*/
+    background-size: auto !important;
 }
 
 #main-wrapper {
-    background: url('/personal_page/img/main.gif') center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    /*background-size: auto !important;*/
 }
 
-#tg-wrapper {
-    background: url('/personal_page/img/tg.gif') center;
+#main-wrapper > video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
 }
 
-#github-wrapper {
-    background: url('/personal_page/img/gh.gif') center;
+.main-bg {
+    background-color: #69599a !important;
+    /*background: url('/personal_page/img/main.jpg') center #69599a;*/
 }
 
-#vk-wrapper {
-    background: url('/personal_page/img/vk.gif') center;
+.vk-bg {
+    background-color: #7f3c85 !important;
+    /*background: url('/personal_page/img/vk.jpg') center #7f3c85;*/
+}
+
+.tg-bg {
+    background-color: #360e1f !important;
+    /*background: url('/personal_page/img/tg.jpg') center #360e1f;*/
+}
+
+.gh-bg {
+    background-color: #5c2432 !important;
+    /*background: url('/personal_page/img/gh.jpg') center #5c2432 ;*/
+}
+
+
+@supports (object-fit: cover) {
+    #main-wrapper > video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 #layout-opacity {
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
@@ -122,8 +158,9 @@ h1 {
 }
 
 .footer-wrapper-wrapper {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    /*margin-bottom: 4rem;*/
     width: 80%;
 
 }
@@ -160,3 +197,4 @@ a {
     color: transparent;
     text-decoration: none;
 }
+
