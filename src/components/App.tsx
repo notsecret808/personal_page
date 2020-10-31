@@ -61,7 +61,7 @@ function App() {
                 <div id={'menu-wrapper'}>
                     <div id={'menu'}>
                         <Link setBackgroundStyle={setBackground} BackgroundStyle={'vk'} ServiceName={'vk'}
-                              ServiceLink={'vk.com/glodboyshawty'}/>
+                              ServiceLink={'vk.com/glodgangshawty'}/>
                         <Link setBackgroundStyle={setBackground} BackgroundStyle={'tg'} ServiceName={'tg'}
                               ServiceLink={'t.me/Levandro'}/>
                         <Link setBackgroundStyle={setBackground} BackgroundStyle={'gh'}
